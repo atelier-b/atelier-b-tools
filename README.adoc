@@ -1,0 +1,8 @@
+= Atelier B - startBB
+
+In this repo contains a simple bash script that starts a bbatch console for a Atelier B workspace.
+
+== TODO
+
+TODO
+
