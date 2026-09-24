@@ -57,3 +57,18 @@ This bash script syncronize the workspace directory into the workspace database.
 Put this file in a directory that is in the $PATH environment variable, or create a simbolic link here.
 
 If you added a new projects or component file or deleted you should run this script in order to the projects in the Atelier B presentation will be godd and synchronized with the file system.
+
+== Windows batch files
+
+The corresponding Windows scripts are `initABWS-2404.bat`, `startBB-2404.bat`, and `syncABWS-2404.bat`. Run them from a Command Prompt in the workspace directory. Put the batch files together in a directory on `PATH`, or invoke them by their full paths. The sync script also finds `startBB-2404.bat` beside itself.
+
+Set `ATELIERB_PATH` to the Atelier B 24.04.2 installation directory before starting or synchronizing a workspace, for example:
+
+[source,bat]
+----
+set "ATELIERB_PATH=C:\Program Files\Atelier B 24.04.2"
+startBB-2404.bat
+syncABWS-2404.bat
+----
+
+Run `initABWS-2404.bat` from an empty directory. It prompts for the installation directory and creates `bdb`, `Archives`, and the `AtelierB` configuration file. Its prompt does not set `ATELIERB_PATH` in the parent Command Prompt; set that variable separately before using the other two batch files.
